@@ -26,3 +26,4 @@ data:
   config.toml: |
     concurrent = {{ .Values.concurrent }}
     check_interval = {{ .Values.checkInterval }}
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
